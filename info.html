@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VINVIN - Contacto</title>
+  <meta name="description" content="Contacta con VINVIN para resolver dudas, conocer nuestras catas y descubrir dónde encontrarnos en Almería.">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dark.css">
+</head>
+
+<body class="theme-light">
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a class="brand" href="index.html" aria-label="Vinvin">
+        <img class="brand__logo" src="assets/images/logos/logo_vinvin_dark.png" alt="" aria-hidden="true">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav class="main-nav navbar navbar-expand-md" id="mainNav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="busqueda.html">Compra</a>
+        <a href="index.html#catas">Ver nuestras catas de vino</a>
+        <a href="info.html" aria-current="page">Contacto</a>
+      </nav>
+
+      <div class="header-right">
+        <form class="search" action="busqueda.html" role="search">
+          <button type="submit" class="icon-btn">
+            <img src="assets/images/icons/lupa.svg" width="24" height="24" alt="">
+            <span class="sr-only">Buscar</span>
+          </button>
+        </form>
+
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" class="is-active">ES</button>
+          <span aria-hidden="true">|</span>
+          <button type="button">EN</button>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌓</button>
+
+        <button type="button" class="icon-link cart-toggle" id="cartToggle" aria-label="Abrir resumen del carrito" aria-controls="cartDrawer" aria-expanded="false">
+          <img src="assets/images/icons/carrito.svg" width="24" height="24" alt="">
+          <span class="sr-only">Carrito</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section info" aria-labelledby="info-title">
+      <div class="container info-grid">
+        <header class="info-head">
+          <h1 id="info-title">Contacto</h1>
+          <p class="info-lead">
+            Ponte en contacto con VINVIN para resolver dudas, conocer nuestras catas y descubrir dónde encontrarnos en Almería.
+          </p>
+        </header>
+
+        <section class="contact-top-grid" aria-labelledby="contact-data-title">
+          <article class="contact-card">
+            <p class="contact-kicker">VINVIN · Vinos y Viandas</p>
+            <h2 id="contact-data-title">Hablemos</h2>
+            <p class="contact-card-lead">
+              Estamos encantados de ayudarte a elegir tu próxima experiencia VINVIN, resolver dudas o recibir tu consulta.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <img class="loc-ico" src="assets/images/icons/ubicacion.svg" alt="">
+                <div>
+                  <strong>Dirección</strong>
+                  <span>Calle González Garbín, 19 – Almería</span>
+                </div>
+              </li>
+              <li>
+                <img class="loc-ico" src="assets/images/icons/telefono.svg" alt="">
+                <div>
+                  <strong>Teléfono</strong>
+                  <span>+34 620 711 372</span>
+                </div>
+              </li>
+              <li>
+                <img class="loc-ico" src="assets/images/icons/email.svg" alt="">
+                <div>
+                  <strong>Correo</strong>
+                  <span>info@vinvin.es</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact-hours">
+              <h3>Horario</h3>
+              <p>Lunes a jueves: 17:00 - 23:00</p>
+              <p>Viernes y sábado: 13:00 - 00:00</p>
+              <p>Domingo: Cerrado</p>
+            </div>
+
+            <a class="btn btn-outline-primary" href="https://maps.google.com/?q=Calle+González+Garbín+19+Almería" target="_blank" rel="noopener noreferrer">
+              Ver ubicación
+            </a>
+          </article>
+
+          <article class="contact-form-card">
+            <h2 id="form-title">Escríbenos</h2>
+
+            <form class="contact-form" action="#" method="post">
+              <div class="mb-3 text-start">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+
+              <div class="mb-3 text-start">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+
+              <div class="mb-3 text-start">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto" name="asunto" required>
+              </div>
+
+              <div class="mb-3 text-start">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Enviar consulta</button>
+            </form>
+          </article>
+        </section>
+
+        <section class="info-block info-extra" aria-labelledby="info-extra-title">
+          <h2 id="info-extra-title">Más sobre VINVIN</h2>
+
+          <div class="info-cards-3">
+            <article class="info-card">
+              <h3><a href="index.html#eslogan-band">Quiénes somos</a></h3>
+              <figure class="team-figure">
+                <div class="team-image">
+                  <img src="assets/images/team/team.jpg" alt="Equipo de trabajo de VINVIN">
+                </div>
+                <figcaption class="img-credit">
+                  Imagen obtenida de Unsplash · uso gratuito sin necesidad de atribución.
+                </figcaption>
+              </figure>
+            </article>
+
+            <article class="info-card">
+              <h3>Dónde estamos</h3>
+              <div class="info-card-map">
+                <iframe
+                  title="Mapa de ubicación de VINVIN"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.047444248092!2d-2.4642014583287386!3d36.84133977235112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7075fe2a3fc481%3A0x587f019896621c6d!2sWood%20Work%20Coworking%20Almeria!5e0!3m2!1ses!2ses!4v1769413801271!5m2!1ses!2ses"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <h3>Conócenos en vídeo</h3>
+              <div class="info-card-video">
+                <iframe
+                  title="Vídeo sobre VINVIN"
+                  src="https://www.youtube.com/embed/EPrsZyKN0Ok?cc_load_policy=1"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-stack">
+      <div class="footer-row footer-brand">
+        <img src="assets/images/logos/logo_vinvin_dark.png" alt="VINVIN">
+      </div>
+
+      <div class="footer-row fi">
+        <img class="fi-ico" src="assets/images/icons/ubicacion.svg" alt="">
+        <span>Calle González Garbín, 19 – Almería</span>
+      </div>
+
+      <div class="footer-row fi">
+        <img class="fi-ico" src="assets/images/icons/telefono.svg" alt="">
+        <span>+34 620 711 372</span>
+      </div>
+
+      <div class="footer-row fi">
+        <img class="fi-ico" src="assets/images/icons/email.svg" alt="">
+        <span>info@vinvin.es</span>
+      </div>
+
+      <nav class="footer-row social" aria-label="Redes sociales">
+        <a href="#" aria-label="Instagram">
+          <img src="assets/images/icons/instagram.svg" width="24" height="24" alt="">
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img src="assets/images/icons/facebook.svg" width="24" height="24" alt="">
+        </a>
+        <a href="#" aria-label="X">
+          <img src="assets/images/icons/twitter.svg" width="24" height="24" alt="">
+        </a>
+      </nav>
+
+      <nav class="footer-row footer-info" aria-label="Información legal">
+        <a href="info.html">Contacto</a>
+      </nav>
+
+      <p class="footer-row copy">© 2025 VINVIN – Vinos y Viandas</p>
+    </div>
+  </footer>
+
+  <!-- RESUMEN DESPLEGABLE DEL CARRITO -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" hidden></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartDrawerTitle" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <h2 id="cartDrawerTitle">Tu carrito</h2>
+      <button type="button" class="cart-drawer__close" id="cartDrawerClose" aria-label="Cerrar resumen del carrito">×</button>
+    </div>
+
+    <div class="cart-drawer__body" id="cartDrawerBody"></div>
+
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__total">
+        <span>Total</span>
+        <strong id="cartDrawerTotal">0,00 €</strong>
+      </div>
+
+      <a href="carrito.html" class="btn btn-primary">Ver carrito completo</a>
+    </div>
+  </aside>
+
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const b = document.body;
+    const t = document.getElementById('themeToggle');
+    if (t){
+      if(localStorage.getItem('theme') === 'dark'){
+        b.classList.add('theme-dark');
+        t.setAttribute('aria-pressed', 'true');
+      }
+
+      t.addEventListener('click', ()=>{
+        const dark = b.classList.toggle('theme-dark');
+        t.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+      });
+    }
+  </script>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    if (navToggle && mainNav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      });
+    }
+  </script>
+
+  <script>
+    document.addEventListener('keydown', (e) => {
+      const activeTag = document.activeElement.tagName.toLowerCase();
+      const escribiendo = activeTag === 'input' || activeTag === 'textarea';
+
+      if (!escribiendo && e.key.toLowerCase() === 't') {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+    });
+  </script>
+
+  <script>
+    function renderCartDrawer() {
+      const cartDrawerBody = document.getElementById('cartDrawerBody');
+      const cartDrawerTotal = document.getElementById('cartDrawerTotal');
+
+      if (!cartDrawerBody || !cartDrawerTotal) return;
+
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cartDrawerBody.innerHTML = '';
+
+      if (cart.length === 0) {
+        cartDrawerBody.innerHTML = '<p>Tu carrito está vacío.</p>';
+        cartDrawerTotal.textContent = '0,00 €';
+        return;
+      }
+
+      let total = 0;
+
+      cart.forEach(product => {
+        total += product.precio * product.cantidad;
+
+        const item = document.createElement('article');
+        item.className = 'cart-drawer__item';
+
+        item.innerHTML = `
+          <img src="${product.imagen}" alt="${product.nombre}">
+          <div>
+            <h3>${product.nombre}</h3>
+            <p>${product.cantidad} x ${product.precio.toFixed(2).replace('.', ',')} €</p>
+          </div>
+        `;
+
+        cartDrawerBody.appendChild(item);
+      });
+
+      cartDrawerTotal.textContent = total.toFixed(2).replace('.', ',') + ' €';
+    }
+
+    renderCartDrawer();
+  </script>
+
+  <script>
+    const cartToggle = document.getElementById('cartToggle');
+    const cartDrawer = document.getElementById('cartDrawer');
+    const cartDrawerClose = document.getElementById('cartDrawerClose');
+    const cartDrawerBackdrop = document.getElementById('cartDrawerBackdrop');
+
+    if (cartToggle && cartDrawer && cartDrawerClose && cartDrawerBackdrop) {
+      const openCartDrawer = () => {
+        renderCartDrawer();
+        cartDrawer.classList.add('is-open');
+        cartDrawer.setAttribute('aria-hidden', 'false');
+        cartToggle.setAttribute('aria-expanded', 'true');
+        cartDrawerBackdrop.hidden = false;
+      };
+
+      const closeCartDrawer = () => {
+        cartDrawer.classList.remove('is-open');
+        cartDrawer.setAttribute('aria-hidden', 'true');
+        cartToggle.setAttribute('aria-expanded', 'false');
+        cartDrawerBackdrop.hidden = true;
+      };
+
+      cartToggle.addEventListener('click', openCartDrawer);
+      cartDrawerClose.addEventListener('click', closeCartDrawer);
+      cartDrawerBackdrop.addEventListener('click', closeCartDrawer);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && cartDrawer.classList.contains('is-open')) {
+          closeCartDrawer();
+        }
+      });
+    }
+  </script>
+
+  <script>
+    const backToTopBtn = document.getElementById('backToTop');
+
+    if (backToTopBtn) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+          backToTopBtn.classList.add('is-visible');
+        } else {
+          backToTopBtn.classList.remove('is-visible');
+        }
+      });
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  </script>
+
+</body>
+
+</html>
